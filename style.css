@@ -1,0 +1,177 @@
+/* Reset */
+
+* {
+  font-family: sans-serif;
+  color: rgb(22, 22, 22);
+  background-color: #6e6e6e;
+  box-sizing: border-box;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+a,
+img,
+p {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Scroll Suave */
+
+#scroll-suave {
+  max-width: 300px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  padding: 0.8rem 0;
+  padding-bottom: 300px;
+}
+
+#scroll-suave a {
+  text-align: center;
+  padding: 0.3rem 0;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#scroll-suave a:hover,
+#scroll-suave a.ativo {
+  color: aqua;
+}
+
+/* Tab-Nav */
+
+#tab-nav {
+  max-width: 300px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: center;
+  padding: 0.8rem 0;
+  padding-bottom: 300px;
+}
+
+#tab-nav h3 {
+  text-align: center;
+  padding: 0.3rem 0;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#tab-nav h3:hover,
+#tab-nav h3.ativo {
+  color: aqua;
+}
+
+#tab-nav p {
+  grid-column: 1 / 4;
+  text-align: center;
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+#tab-nav p.ativo {
+  display: block;
+}
+
+/* Faq */
+
+#faq {
+  padding-bottom: 300px;
+}
+
+#faq tr {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 300px;
+}
+
+#faq th,
+#faq td {
+  text-align: center;
+}
+
+#faq th {
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#faq th:hover,
+#faq th.ativo {
+  color: aqua;
+}
+
+#faq td {
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+#faq td.ativo {
+  display: block;
+}
+
+/* Scroll Anime */
+
+#scroll-anime {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 2px;
+  padding-bottom: 300px;
+}
+
+#scroll-anime h1 {
+  display: block;
+  height: 200px;
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-scroll="anime"] {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-scroll="anime"].show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
