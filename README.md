@@ -1,4 +1,4 @@
-﻿# Features JavaScriot
+﻿# Features JavaScript
 
 Página produzida como treino de JavaScript, utilizando a linguagem para implementar funções que são comuns em diversos sites.
 
